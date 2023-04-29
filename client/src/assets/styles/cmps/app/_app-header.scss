@@ -1,0 +1,192 @@
+.app-header-section {
+  // padding: 0 4px;
+  background-color: $clr3;
+  // background-color: $dynamic-background;
+  color: $clr-white;
+  display: flex;
+  align-items: center;
+  // padding: 6px 4px 0 4px;
+  // position: fixed;
+  // top: 0;
+  // width: 100%;
+  // z-index: 20;
+  border-bottom: 1px rgba(255, 255, 255, 0.216) solid;
+  justify-content: space-between;
+
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .user-section {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+
+    img {
+      margin-right: 10px;
+      width: 30px;
+      border-radius: 50%;
+    }
+
+    .logout-btn {
+      border-radius: 0.3rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 400;
+      background-color: transparent;
+      display: none;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.327);
+      }
+    }
+  }
+
+  .header-links {
+    color: white;
+    font-size: 1.5em;
+    margin-left: 10px;
+  }
+
+  .logo {
+    background-image: url('../../../img/header/logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    margin: 0 20px 0 10px;
+
+    &:hover {
+      background-image: url('https://a.trellocdn.com/prgb/dist/images/header-logo-spirit-loading.87e1af770a49ce8e84e3.gif');
+    }
+  }
+
+  .logo-name {
+    margin: 0 10px;
+    padding-bottom: 3px;
+  }
+
+  .user-info {
+    padding-left: 100px;
+
+    .score {
+      padding: 8px;
+      margin: 10px;
+      border-radius: 50%;
+    }
+
+    img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  nav {
+    font-size: 1em;
+    padding: 5px;
+    margin-bottom: 0;
+    // display: flex;
+    // justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      font-family: inherit;
+      color: white;
+      line-height: 32px;
+      font-weight: 500;
+    }
+
+    .down-arrow-nav {
+      font-size: 1.2em;
+      margin-left: 5px;
+      position: relative;
+      top: 4px;
+    }
+  }
+
+  nav a:not(:first-child) {
+    padding: 0 5px;
+    margin: 10px;
+  }
+
+  .create-dropdown {
+    position: relative;
+
+    button {
+      background-color: #29354966;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Noto Sans', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      line-height: 20px;
+      border-radius: rem(3px);
+      padding: 6px 12px;
+      font-weight: 400;
+      margin: 0 5px;
+
+      transition-property: background-color;
+      transition-duration: 85ms;
+      transition-timing-function: ease;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.327);
+      }
+    }
+
+    .modal-content {
+      .add-board {
+        position: absolute;
+        // top: 50px;
+        // left: 580px;
+        z-index: 100;
+      }
+    }
+  }
+}
+
+.app-header-home-section {
+  display: flex;
+  align-items: center;
+  padding: 10px 120px;
+  justify-content: space-between;
+
+  position: absolute;
+  top: -2px;
+  width: 100vw;
+
+
+
+  @include for-mobile-layout {
+    padding: 10px;
+  }
+
+  .logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: 900;
+    color: #253858;
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  a {
+    -webkit-box-align: center;
+    align-items: center;
+    align-self: stretch;
+    color: rgb(23, 43, 77);
+    display: flex;
+    font-size: 1.2rem;
+    height: 100%;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    font-family: 'charlie-regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+}

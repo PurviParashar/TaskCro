@@ -1,0 +1,82 @@
+//* Setup
+@import 'setup/variables';
+@import 'setup/functions';
+@import 'setup/mixins';
+@import 'setup/typography';
+
+//* Basics
+@import 'basics/normalize';
+@import 'basics/helpers';
+@import 'basics/layout';
+@import 'basics/base';
+@import 'basics/links';
+@import 'basics/forms';
+
+//* Views
+@import 'views/about-us';
+@import 'views/home';
+@import 'views/admin-index';
+@import 'views/board-index';
+@import 'views/user-details';
+@import 'views/workspace';
+
+//* Components
+@import 'cmps/app/app-header';
+@import 'cmps/app/user-msg';
+@import 'cmps/app/loader';
+@import 'cmps/app/modal';
+
+//* Board
+@import 'cmps/board/board-details';
+@import 'cmps/board/board-filter';
+@import 'cmps/board/board-list';
+@import 'cmps/board/board-preview';
+@import 'cmps/board/board-add';
+@import 'cmps/board/board-header';
+@import 'cmps/board/board-menu';
+//* Group
+@import 'cmps/group/group-filter';
+@import 'cmps/group/group-list';
+@import 'cmps/group/group-preview';
+//* Task
+@import 'cmps/task/task-list';
+// Task Preview
+@import 'cmps/task/task-preview/task-preview';
+// Task Preview: Components
+@import 'cmps/task/task-preview/cmps/edit-btn';
+@import 'cmps/task/task-preview/cmps/cover';
+@import 'cmps/task/task-preview/cmps/infos';
+@import 'cmps/task/task-preview/cmps/labels';
+@import 'cmps/task/task-preview/cmps/members';
+@import 'cmps/task/task-preview/cmps/title';
+// Task Details
+@import 'cmps/task/task-details/task-details';
+// Task Details: Header
+@import 'cmps/task/task-details/header/task-details-header';
+@import 'cmps/task/task-details/header/cmps/cover';
+// Task Details: Main
+@import 'cmps/task/task-details/main/task-details-main';
+@import 'cmps/task/task-details/main/cmps/activities';
+@import 'cmps/task/task-details/main/cmps/attachments';
+@import 'cmps/task/task-details/main/cmps/dates';
+@import 'cmps/task/task-details/main/cmps/checklist';
+@import 'cmps/task/task-details/main/cmps/date';
+@import 'cmps/task/task-details/main/cmps/description';
+@import 'cmps/task/task-details/main/cmps/follow';
+@import 'cmps/task/task-details/main/cmps/labels';
+@import 'cmps/task/task-details/main/cmps/members';
+// Task Details: Aside
+@import 'cmps/task/task-details/aside/task-details-aside';
+@import 'cmps/task/task-details/aside/segments/suggested-action';
+@import 'cmps/task/task-details/aside/segments/task-action';
+@import 'cmps/task/task-details/aside/segments/group-action';
+
+//* User
+@import 'cmps/user/admin-view';
+@import 'cmps/user/login-form';
+@import 'cmps/user/login-signup';
+@import 'cmps/user/user-preview';
+
+// Modals
+@import 'cmps/modals/members-modal';
+@import 'cmps/modals/dates-modal'

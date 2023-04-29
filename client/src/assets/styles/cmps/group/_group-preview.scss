@@ -1,0 +1,214 @@
+.group-preview {
+  height: calc(100vh - 122px);
+}
+
+.group-preview-wrapper {
+  max-height: 100%;
+  margin: 0 4px;
+  width: 272px;
+  padding-top: 4px;
+
+  .group-header {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+
+    .group-edit-menu-btn {
+      padding-right: 0;
+      margin-right: 14px;
+      padding-top: 1.5px;
+      font-size: 1em;
+    }
+
+    .modal-group-actions {
+      position: absolute;
+      left: 220px !important;
+      top: 33px;
+
+      .group-actions-modal-list-container {
+        padding: 0;
+
+        .modal-btn-full {
+          @include btn(
+            'modal-full',
+            white,
+            6px 12px,
+            $list-btn-bg-clr-modal-hover
+          );
+        }
+      }
+
+      #modal-form-container {
+        padding: 0;
+
+        button:last-of-type {
+          margin-bottom: 12px;
+        }
+
+        button:first-of-type {
+          margin-top: 8px;
+        }
+      }
+    }
+
+    button {
+      background-color: rgba(255, 255, 255, 0);
+      color: $clr-txt;
+    }
+  }
+
+  & .template-btn {
+    font-size: 1em;
+    color: $clr-txt-btn;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 5px 0 0 0;
+    padding: 4px;
+    border-radius: $border-radius;
+
+    &:hover {
+      background-color: #091e4214;
+    }
+  }
+
+  .plus {
+    position: relative;
+    font-size: 1.1em;
+    margin-right: 5px;
+  }
+
+  .group-preview-section {
+    background-color: $group-bg-clr;
+    color: $clr-txt;
+    display: flex;
+    flex-direction: column;
+    border-radius: $border-radius;
+    padding: 6px 8px 2px;
+    box-shadow: 0 1px 0 rgb(9 30 66 / 25%);
+    max-height: calc(100vh - 125px);
+
+    .add-task-edit {
+      padding: 9px 8px 2px 8px;
+      margin-top: 10px;
+      margin-bottom: 2px;
+      max-height: 162px;
+      min-height: 68px;
+      border: none;
+      // line-height: 20px;
+      text-align: start;
+      width: 100%;
+      resize: none;
+
+      &:hover {
+        background-color: #fff;
+      }
+
+      .add-task-textarea {
+        grid-column: 1 / -1;
+        border: none;
+        max-height: 162px;
+        min-height: 54px;
+        width: 100%;
+        border-radius: $border-radius;
+        outline: none;
+        font-family: inherit;
+        resize: none;
+        overflow: hidden;
+        overflow-wrap: break-word;
+        padding: 0 5px 30px 0;
+        margin-top: 0;
+      }
+    }
+
+    .group-title {
+      font-size: 1em;
+      font-weight: 600;
+      line-height: 20px;
+      margin-left: 6px;
+      margin-top: 5px;
+      width: 100%;
+      text-align: left;
+      padding: 0 3px;
+
+      &:focus {
+        margin-left: 2px;
+        background-color: $clr-white;
+        padding: 3px 0 3px 7px;
+      }
+    }
+
+    .group-bottom-control-btns {
+      display: flex;
+      min-height: 38px;
+      padding: 2px 4px;
+      justify-content: space-between;
+
+      .add-task-btn {
+        display: flex;
+        align-items: center;
+        padding: 4px 8px;
+        background-color: transparent;
+        color: $clr-txt-btn;
+        width: 100%;
+        border-radius: $border-radius;
+        text-align: left;
+        margin: 8px 0 8px 0;
+
+        &:hover {
+          background-color: #091e4214;
+        }
+      }
+    }
+  }
+}
+
+.add-group-container {
+  padding: 6px 8px 2px;
+  box-shadow: 0 1px 0 rgb(9 30 66 / 25%);
+  font-size: 1em;
+  margin-top: 4px;
+  border-radius: $border-radius;
+  background-color: $group-bg-clr;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 264px;
+  height: fit-content;
+
+  .new-group-input {
+    font-size: 1em;
+    padding: 8px 12px;
+    border-radius: $border-radius;
+    border: none;
+    box-shadow: inset 0 0 0 2px var(--ds-border-focused, #0079bf);
+    width: 264px;
+    margin: 0;
+  }
+}
+
+.add-item-wrapper {
+  display: flex;
+  margin: 0;
+
+  .new-item-add-btn {
+    display: flex;
+    background-color: $clr4;
+    border-radius: $border-radius;
+    font-family: inherit;
+    font-size: 1em;
+    margin-left: 0;
+    padding: 7px 12px 5px;
+    width: fit-content;
+  }
+
+  .close-add-item {
+    display: inline-block;
+    background-color: transparent;
+    color: $clr-txt-btn;
+    font-size: 1.6em;
+    margin: 0;
+    text-align: left;
+    padding: 8px 0 6px 4px;
+    width: fit-content;
+  }
+}

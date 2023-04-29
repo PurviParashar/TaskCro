@@ -1,0 +1,106 @@
+//* Colors
+$clr1: #026aa7;
+$clr2: #172b4d;
+$clr3: #0366a1;
+$clr4:#0079bf;
+$group-bg-clr: #ebecf0;
+$default-board-bg-clr: #0079bf;
+$dynamic-background: hsl(312,11.1%,87.4%);
+
+//labels
+$label-clr-green: #7bc86c;
+$label-clr-yellow: #f5dd29;
+$label-clr-orange: #ffaf3f;
+$label-clr-red: #ef7564;
+$label-clr-purple: #cd8de5;
+$label-clr-blue: #5ba4cf;
+//light
+$label-clr-green-light: #d6ecd2;
+$label-clr-yellow-light: #faf3c0;
+$label-clr-orange-light: #fce6c6;
+$label-clr-red-light: #f5d3ce;
+$label-clr-purple-light: #eddbf4;
+$label-clr-blue-light: #bcd9ea;
+
+//cover
+$cover-clr-purple: #cd8de5;
+$cover-clr-red: #ef7564;
+$cover-clr-orange: #ffaf3f;
+$cover-clr-yellow: #f5dd29;
+$cover-clr-green: #7bc86c;
+// $cover-clr-dark-blue: #172b4d;
+$cover-clr-pink: #ff8ed4;
+$cover-clr-limegreen: #6deca9;
+$cover-clr-turquoise: #29cce5;
+$cover-clr-blue: #5ba4cf;
+
+//modal
+$modal-clr: #6e6e6e;
+$modal-txt-clr: #5e6c84;
+$input-bg-clr: #fafbfc;
+$allowed-btn-bg-clr: #0079bf;
+$allowed-btn-bg-clr-hover: #0169a6;
+$list-btn-bg-clr-modal-hover: #091e420a;
+$task-details-btn-bg-clr-hover: #091e4214;
+$disabled-btn-bg-clr: rgba(9, 30, 66, 0.04);
+$disabled-btn-clr: #a5adba;
+
+//board-list
+$board-list-btn: rgba(9, 30, 66, .039);
+$board-list-btn-hover: rgba(9, 30, 66, 0.092);
+
+//basics
+$clr-white: #fff;
+$clr-black: #222;
+$clr-txt: #172b4d;
+$clr-txt-btn:#5e6c84;
+$border-radius: 3px;
+//background
+$main-bg-color: #fafbfc;
+
+// Task
+$clr-task-preview-section-border-radius: $border-radius;
+$clr-task-preview-border-radius: 3px 3px 0px 0px;
+
+//* LAYOUT
+$layoutPadding: 20px;
+
+// LAYOUT BREAKPOINTS
+$break-narrow: 600px;
+$break-normal: 900px;
+$break-wide: 1100px;
+
+$padded-break-narrow: $break-narrow + $layoutPadding * 2;
+$padded-break-normal: $break-normal + $layoutPadding * 2;
+$padded-break-wide: $break-wide + $layoutPadding * 2;
+
+
+
+//Trying something
+//     /* theme color variables to use in RGB declarations */
+//     $red: 200;
+//     $green: 60;
+//     $blue: 255;
+//     /* the threshold at which colors are considered "light". 
+//     Range: decimals from 0 to 1, recommended 0.5 - 0.6 */
+//     $threshold: 0.5;
+//     /* the threshold at which a darker border will be applied.
+//     Range: decimals from 0 to 1, recommended 0.8+ */
+//     $border-threshold: 0.8;
+  
+  
+//   .btn-color {
+//     /* sets the background for the base class */
+//     background: rgb($red, $green, $blue);
+  
+//     /* calculates perceived lightness using the sRGB Luma method 
+//     Luma = (red * 0.2126 + green * 0.7152 + blue * 0.0722) / 255 */
+//     $r: calc(var($red) * 0.2126);
+//     $g: calc(var($green) * 0.7152);
+//     $b: calc(var($blue) * 0.0722);
+//     $sum: calc($r + $g + $b);
+//     $perceived-lightness: calc($sum / 255);
+    
+//     /* shows either white or black color depending on perceived darkness */
+//     color: hsl(0, 0%, calc(($perceived-lightness - $threshold) * -10000000%)); 
+//   }

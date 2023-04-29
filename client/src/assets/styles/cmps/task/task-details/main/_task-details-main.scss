@@ -1,0 +1,29 @@
+//* Main
+.task-details-main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  // display: grid;
+  // grid-auto-columns: 56px 512px;
+  // grid-auto-rows: auto;
+  // grid-template-columns: repeat(auto-fit, 56px 512px);
+  // grid-template-areas:
+  //   't-icon title'
+  //   '. members'
+  //   '. labels'
+  //   'd-icon description'
+  //   'checklist checklist'
+  //   'checklist checklist'
+  //   'a-icon activities';
+  &-article-container {
+    margin-left: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 20px;
+    max-width: 512px;
+    @include for-mobile-layout {
+      max-width: calc(100vw - 78px);
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.task-preview {
+  &-infos {
+    grid-area: infos;
+    justify-self: start;
+    padding-left: 8px;
+    margin-top: 4px;
+    margin-bottom: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
+    gap: 4px 8px;
+    font-size: 12px;
+    color: #6b778c;
+    float: left;
+    //* Is Following
+    &-follow {
+      font-size: 16px;
+      padding-top: 3px;
+      margin-right: 2px;
+      // & svg {
+      //   font-size: 14px;
+      // }
+    }
+
+    //* Date
+    &-date {
+      // padding-top: 3px;
+      display: flex;
+      place-items: center;
+      width: max-content;
+      gap: 4px;
+      margin-right: 2px;
+      & svg {
+        font-size: 16px;
+      }
+      & span {
+        font-size: 12px;
+      }
+      &.late {
+        padding: 6px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        border-radius: 3px;
+        color: white;
+        background-color: #eb5a46;
+      }
+
+      &.done {
+        text-decoration: none;
+        padding: 6px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        border-radius: 2px;
+        color: white;
+        background-color: #61bd4f;
+      }
+
+      &.soon {
+        padding: 6px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        border-radius: 2px;
+        color: #172b4d;
+        background-color: #f2d600;
+      }
+    }
+
+    //* Description
+    &-description {
+      margin-right: 2px;
+      font-size: 14px;
+      padding-top: 3px;
+    }
+    //* Comment
+    &-comment {
+      display: flex;
+      place-items: center;
+      gap: 4px;
+      margin-right: 2px;
+      & svg {
+        font-size: 14px;
+      }
+      & span {
+        font-size: 12px;
+      }
+    }
+
+    //* Attachments
+    &-attachments {
+      display: flex;
+      place-items: center;
+      gap: 4px;
+      margin-right: 2px;
+      & svg {
+        font-size: 14px;
+      }
+      & span {
+        font-size: 12px;
+      }
+    }
+
+    //* Todos
+    &-todo {
+      display: flex;
+      place-items: center;
+      gap: 4px;
+      margin-right: 2px;
+      &.complete {
+        background-color: #61bd4f;
+        color: white;
+        border-radius: 3px;
+        padding: 6px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+      }
+      & svg {
+        font-size: 14px;
+      }
+      & span {
+        font-size: 12px;
+      }
+    }
+  }
+}
